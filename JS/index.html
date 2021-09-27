@@ -2,6 +2,7 @@
 <HEAD>
 <meta charset="utf-8">
 <title>Сайт web-тудії "Web-DECO"</title>
+<script src="js/clock1.js"></script>
 <script type="text/javascript">
 function send()
 {   var valid = true;
@@ -30,6 +31,10 @@ function send()
         font-size: 2em;
     }
 </style>
+<script>
+window.onload = function(){
+    setInterval (clockPainting, 1000);  }
+</script>
 </HEAD>
 <BODY background="images/bg.jpg">
 <table border="1" aling="center" cellpadding="10">
@@ -47,7 +52,10 @@ function send()
         </b></font></td> 
     </tr>
     <tr>
-        <td width="30%" valing="top"><font size="5" color="navy"><h2>Новини</h2></font>
+        <td width="30%" valing="top">
+            <center><canvas id="canvas" height="120" width="120"></canvas></center>
+            <hr>
+            <font size="5" color="navy"><h2>Новини</h2></font>
             <font size="5">
                 <ul>
                     <li><a href="#">Сайт будівельної клмпанії</a></li>
